@@ -22,6 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
         integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js
+        "></script>
 
     <!-- CSS Own -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,7 +32,20 @@
 </head>
 
 
-<body onload="typing()">
+<body>
+    <script>
+        window.
+        onload
+            = function () {
+                Particles.
+                init
+                    ({
+                        selector: '.background'
+                    });
+            };
+    </script>
+    <canvas class="background"></canvas>
+    <!-- Navbar -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navs fixed-top shadow">
         <div class="container-fluid">
@@ -81,132 +96,31 @@
         </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Jumbotron -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/foto2.jpg" class="d-block w-100" alt="..." style="filter:brightness(25%)">
-                <div class="carousel-caption" style="transform: translateY(-600%);">
-                    <div class="caption">
-                        <img src="assets/img/logo-mrt.png" class="logo-carousel"
-                            style="margin-bottom: 20px;width: 25%;">
-                        <div class="text">
-                            <p style="font-size: 50px;" class="hmti-text">BARELANG MRT 2022</p>
-                            <p style="margin-top: -20px; font-weight: 700; font-size: 30px; " class="keep">BUILDING
-                                TOGETHER TO BE A
-                                <span style="color:#2760AD;" id="demo"></span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- End Navbar -->
+
+
+    <!-- Struktur Organisasi -->
+
+    <div class="container" style="margin-left: 100px !important;">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message with</p>
+        </div>
+        <div class="row" style="margin-bottom: 20px; margin-top: 50px;">
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1Iu_VVcenQGxJH0qJL_sqmbbxE8Q&ehbc=2E312F"
+                    height="480" style="width: 100%;"></iframe>
+            </div>
+            <div class="col-md-6">
+                <label for="subject"><b>Address</b></label>
+                <p>Batam Centre, Jl. Ahmad Yani, Tlk. Tering, Kec. Batam Kota, Kota Batam,
+                    Kepulauan Riau 29461</p>
+                <label for="subject"><b>Email</b></label>
+                <p>barelangmrt@gmail.com</p>
             </div>
         </div>
     </div>
-    <!-- End Jumbotron -->
-    <!-- Tentang HMTI -->
-
-    <div class="about-us" id="tentang-kami">
-        <div class="container p-5">
-            <h1 class="mb-1" style="color: #2760AD; font-family: 'Spartan'; font-weight: bolder; text-align: center;"
-                data-aos="fade-up">
-                ABOUT US</h1>
-            <p class="text-center" data-aos="fade-bottom">We're One, To Be The Only One !</p>
-            <div class="row mt-5">
-                <div class="col-md-6" data-aos="fade-left">
-                    <div class="about-logo">
-                        <iframe style="width: 100%; border-radius: 20px;" height="315"
-                            src="https://www.youtube.com/embed/pdEzR1yoVek" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-right">
-                    <p style="text-align: justify; " class="my-auto">
-                        Barelang Marine Robotics Team is a Participants from Politeknik Negeri Batam to follow Roboboat
-                        Competition 2022 in Florida, America. Member of team Barelang MRT (Marine Robotics Team) consist
-                        of Three study programs is Mechatronics , Robotics , and Ship Planning & Construction Ship. We
-                        are confident to carve achievements Roboboat 2022. Buiding together to be a winner !
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- End Tentang HMTI -->
-
-    <!-- Visi Misi -->
-    <div class="visi-misi bg-danger" id="visi-misi">
-        <div class="container p-5" data-aos="fade-up">
-            <div class="container">
-                <center>
-                    <div class="text-white" data-aos="fade-up">
-                        <h1><b>The Division</b></h1>
-                        <p>In our team, we have 3 Division to run their own job.</p>
-                    </div>
-                </center>
-                <div class="row mt-5">
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1500" style="width: 18rem;">
-                            <img src="https://as1.ftcdn.net/v2/jpg/02/17/10/70/1000_F_217107081_AJuJHrQBZ7mSlXKwDnE7VKQ6BtaNugEv.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Mechanical Division</h5>
-                                <p class="card-text">Mechanical
-                                    engineers design, develop, build, and test.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1500" style="width: 18rem;">
-                            <img src="https://i.pinimg.com/originals/dc/30/1d/dc301dd6fac108a2a60f103e01539f04.jpg"
-                                class="card-img-top" style="height: 290px" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Artificial Intelligence</h5>
-                                <p class="card-text">AI engineer builds AI models using machine learning algorithms and
-                                    deep learning
-                                    neural networks.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1500" style="width: 18rem;">
-                            <img src="https://t3.ftcdn.net/jpg/02/58/92/94/360_F_258929407_AHya3I8JQJvFEDrucAI3173HVp8CP59P.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Electrical Division</h5>
-                                <p class="card-text"> Electrical engineering is the branch of engineering that deals
-                                    with the
-                                    technology of electricity.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <img src="assets/img/MainPageSponsorList.png" style="width: 100%;" alt="">
-
-    <!-- End Visi Misi -->
-
-    <!-- Video Pengenalan -->
-    <div class="video p-3" id="video">
-        <div class="container mt-4">
-            <h1 class="mb-3" style="color: #2760AD; font-family: 'Spartan'; font-weight: bolder; text-align: center;"
-                data-aos="fade-up">
-                A Videos !</h1>
-            <iframe data-aos="zoom-in" class="w-100" style="height: 500px;"
-                src="https://www.youtube.com/embed/pdEzR1yoVek" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-        </div>
-    </div>
-    <!-- End Video Pengenalan -->
+    <!-- End Struktur Organisasi -->
 
     <!-- ads -->
     <div class="ads-container pt-4 shadow-lg mt-5">
@@ -265,7 +179,6 @@
         </div>
     </div>
     <!-- end footer -->
-
 
 
 
